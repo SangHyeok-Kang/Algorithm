@@ -9,9 +9,8 @@ class Solution {
         
         for(i = 0; i < d.length; i++){
             sum += d[i];
-            if(sum > budget){
-                answer = i;
-                break;
+            if(sum <= budget){
+                answer++;
             }
         }
         if(sum <= budget){
