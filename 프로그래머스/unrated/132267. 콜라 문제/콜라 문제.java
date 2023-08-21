@@ -9,8 +9,7 @@ class Solution {
         while(n >= a){           
             ret_bott = (n/a)*b;
             result.add(ret_bott);
-            poss_exchange = (n/a)*b + (n%a);
-            n = poss_exchange; //10
+            n = (n/a)*b + (n%a);
         }
         for(int i =0; i< result.size(); i++){
             answer += result.get(i);
